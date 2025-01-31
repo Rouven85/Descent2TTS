@@ -9,9 +9,32 @@
 <Text id = "spielerName" richText = "true" fontSize = "20" color = "white" alignment = "UpperRight" position = "-115 -125" text = "Spieler: "></Text>
 <HorizontalLayout id = "diceResult" width = "0" height = "50" rectAlignment = "UpperRight" offsetXY = "-10 170" anchorMin = "1 0.7" anchorMax = "1 0.7" spacing = "5" color = "rgba(0,0,0,0)"></HorizontalLayout>
 
+<!-- hinweis: die Liste " Heldenpanels" wird in der Heldenpanellua. erstellt  -->
+    <!-- Panel -->
+
+    <Defaults>
+    
+    <Image class="displayImage" width="250" height="480"/>
+    <Button class="imageButton" width="10" height="10" color="green"/> <!-- Hintergrundbilder -->
+    </Defaults>
+
+
 <!-- Spieler_1 -->
-    <Panel id="Parent_PlayerPanel_1" position="-600 0 0" width="250" height="500" alignment="MiddleCenter" color="#2F2F2F0000" allowDragging="true" returntooriginalpositionwhenreleased="false">
-    <Image id="image-panelbck_1" imageId="image-panelbck_1"/>
+    <Panel id="Parent_PlayerPanel_1" position="-600 0 0" width="250" height="500" alignment="MiddleCenter" color="#FFFFFF00" allowDragging="true" returntooriginalpositionwhenreleased="false">
+        <GridLayout cellSize="10 10" spacing="20"><!-- Hintergrundbilder -->
+            <Button id="button_1_1" onClick="buttonClick_1_1" class="imageButton"/>
+            <Button id="button_1_2" onClick="buttonClick_1_2" class="imageButton"/>
+            <Button id="button_1_3" onClick="buttonClick_1_3" class="imageButton"/>
+            <Button id="button_1_4" onClick="buttonClick_1_4" class="imageButton"/>
+            <Button id="button_1_5" onClick="buttonClick_1_5" class="imageButton"/>
+            <Button id="button_1_6" onClick="buttonClick_1_6" class="imageButton"/>
+            <Button id="button_1_7" onClick="buttonClick_1_7" class="imageButton"/>
+            <Button id="button_1_8" onClick="buttonClick_1_8" class="imageButton"/>
+            <Button id="button_1_9" onClick="buttonClick_1_9" class="imageButton"/>
+            <Button id="button_1_10" onClick="buttonClick_1_10" class="imageButton"/>
+        </GridLayout>
+        <Image id="displayedImage_1" class="displayImage"/>
+
     <!-- Inner Player Panel -->
     <Panel id="PlayerPanel_1" width="220" height="270" alignment="MiddleCenter" position="0 100">
         <!-- Diceboard Spieler_1 einschalten -->
@@ -167,8 +190,21 @@
         
                                             
 <!-- Spieler_2 -->
-     <Panel id="Parent_PlayerPanel_2" position="-300 0 0" width="250" height="500" alignment="MiddleCenter" color="#2F2F2F0000" allowDragging="true" returntooriginalpositionwhenreleased="false">
-    <Image id="image-panelbck_2" imageId="image-panelbck_2"/>
+     <Panel id="Parent_PlayerPanel_2" position="-300 0 0" width="250" height="500" alignment="MiddleCenter" color="#FFFFFF00"  allowDragging="true" returntooriginalpositionwhenreleased="false">
+           <GridLayout cellSize="10 10" spacing="20"><!-- Hintergrundbilder -->
+            <Button id="button_2_1" onClick="buttonClick_2_1" class="imageButton"/>
+            <Button id="button_2_2" onClick="buttonClick_2_2" class="imageButton"/>
+            <Button id="button_2_3" onClick="buttonClick_2_3" class="imageButton"/>
+            <Button id="button_2_4" onClick="buttonClick_2_4" class="imageButton"/>
+            <Button id="button_2_5" onClick="buttonClick_2_5" class="imageButton"/>
+            <Button id="button_2_6" onClick="buttonClick_2_6" class="imageButton"/>
+            <Button id="button_2_7" onClick="buttonClick_2_7" class="imageButton"/>
+            <Button id="button_2_8" onClick="buttonClick_2_8" class="imageButton"/>
+            <Button id="button_2_9" onClick="buttonClick_2_9" class="imageButton"/>
+            <Button id="button_2_10" onClick="buttonClick_2_10" class="imageButton"/>
+        </GridLayout>
+        <Image id="displayedImage_2" class="displayImage"/>
+
     <!-- Inner Player Panel -->
     <Panel id="PlayerPanel_2" width="220" height="270" alignment="MiddleCenter" position="0 100">
         <!-- Diceboard Spieler_2 einschalten -->
@@ -325,8 +361,21 @@
 
 <!-- Spieler_3 -->
   
-    <Panel id="Parent_PlayerPanel_3" position="0 0 0" width="250" height="500" alignment="MiddleCenter" color="#2F2F2F0000" allowDragging="true" returntooriginalpositionwhenreleased="false">
-    <Image id="image-panelbck_3" imageId="image-panelbck_3"/>
+    <Panel id="Parent_PlayerPanel_3" position="0 0 0" width="250" height="500" alignment="MiddleCenter" color="#FFFFFF00"  allowDragging="true" returntooriginalpositionwhenreleased="false">
+            <GridLayout cellSize="10 10" spacing="20"><!-- Hintergrundbilder -->
+            <Button id="button_3_1" onClick="buttonClick_3_1" class="imageButton"/>
+            <Button id="button_3_2" onClick="buttonClick_3_2" class="imageButton"/>
+            <Button id="button_3_3" onClick="buttonClick_3_3" class="imageButton"/>
+            <Button id="button_3_4" onClick="buttonClick_3_4" class="imageButton"/>
+            <Button id="button_3_5" onClick="buttonClick_3_5" class="imageButton"/>
+            <Button id="button_3_6" onClick="buttonClick_3_6" class="imageButton"/>
+            <Button id="button_3_7" onClick="buttonClick_3_7" class="imageButton"/>
+            <Button id="button_3_8" onClick="buttonClick_3_8" class="imageButton"/>
+            <Button id="button_3_9" onClick="buttonClick_3_9" class="imageButton"/>
+            <Button id="button_3_10" onClick="buttonClick_3_10" class="imageButton"/>
+        </GridLayout>
+        <Image id="displayedImage_3" class="displayImage"/>
+
     <!-- Inner Player Panel -->
     <Panel id="PlayerPanel_3" width="220" height="270" alignment="MiddleCenter" position="0 100">
         <!-- Diceboard Spieler_3 einschalten -->
@@ -520,8 +569,22 @@
     </Panel>
 
 <!-- Spieler_4 -->
-    <Panel id="Parent_PlayerPanel_4" position="300 0 0" width="250" height="500" alignment="MiddleCenter" color="#2F2F2F0000" allowDragging="true" returntooriginalpositionwhenreleased="false">
-        <Image id="image-panelbck_4" imageId="image-panelbck_4"/>
+    <Panel id="Parent_PlayerPanel_4" position="300 0 0" width="250" height="500" alignment="MiddleCenter" color="#FFFFFF00"  allowDragging="true" returntooriginalpositionwhenreleased="false">
+    
+            <GridLayout cellSize="10 10" spacing="15">
+            <Button id="button_4_1" onClick="buttonClick_4_1" class="imageButton"/>
+            <Button id="button_4_2" onClick="buttonClick_4_2" class="imageButton"/>
+            <Button id="button_4_3" onClick="buttonClick_4_3" class="imageButton"/>
+            <Button id="button_4_4" onClick="buttonClick_4_4" class="imageButton"/>
+            <Button id="button_4_5" onClick="buttonClick_4_5" class="imageButton"/>
+            <Button id="button_4_6" onClick="buttonClick_4_6" class="imageButton"/>
+            <Button id="button_4_7" onClick="buttonClick_4_7" class="imageButton"/>
+            <Button id="button_4_8" onClick="buttonClick_4_8" class="imageButton"/>
+            <Button id="button_4_9" onClick="buttonClick_4_9" class="imageButton"/>
+            <Button id="button_4_10" onClick="buttonClick_4_10" class="imageButton"/>
+        </GridLayout>
+        <Image id="displayedImage_4" class="displayImage"/>
+
     <!-- Inner Player Panel -->
     <Panel id="PlayerPanel_4" width="220" height="270" alignment="MiddleCenter" position="0 100">
         <!-- Diceboard Spieler_4 einschalten -->

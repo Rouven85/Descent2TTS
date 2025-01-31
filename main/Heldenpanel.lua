@@ -148,25 +148,14 @@
     targetGUIDs = {} -- Globale Variable für die Ziel-GUIDs
     local isFarbpanelVisible = true -- Status der Sichtbarkeit des Farbpanels
 
+--diverse buttonbilder für actionbuttons panels
     local refreshImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/38943008356279628/CD88682242B1D1BAF65E7A2BF01E63E4876CE421/"
     local angriffImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/38943008360279659/59BB959B7926B9B98445E8981DD131AA149FCEA8/"
     local abwehrImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/38943008360279659/59BB959B7926B9B98445E8981DD131AA149FCEA8/"
     local probeImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/38943008360279659/59BB959B7926B9B98445E8981DD131AA149FCEA8/"
     local heilungImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/38943008360279659/59BB959B7926B9B98445E8981DD131AA149FCEA8/"
-    local stock1ImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/38943980803101104/3DA17A9455CF68A3240218E85E4C5781695A1A15/"
-    local stock2ImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/38942555189046648/497B687160D338C20740F469509CB90E8ED7E019/"
-    local stock3ImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/38942555200066456/F8D294EB54ECCFA94F01D6FE6052F8D07E0BF3EC/"
-    local stock4ImageUrl = "https://steamusercontent-a.akamaihd.net/ugc/38942555200066456/F8D294EB54ECCFA94F01D6FE6052F8D07E0BF3EC/"
 
---diverse hintergrundbilder für panels
-    local panelImageImageUrl_1 = "https://steamusercontent-a.akamaihd.net/ugc/38943980803174889/580A1953BD3004C423039F0DE124D19F8DA3C887/"    
-    local panelImageImageUrl_2 = "https://steamusercontent-a.akamaihd.net/ugc/38943980803174756/69EB5D1F3DB16E5BED64B3869E36EC68ED3CB1D7/"
-    local panelImageImageUrl_3 = "https://steamusercontent-a.akamaihd.net/ugc/38943980803174651/4BD1F3B82644DFD3323CF2AAE347F1A0836A5B9D/"
-    local panelImageImageUrl_4 = "https://steamusercontent-a.akamaihd.net/ugc/38943980803174831/CDF48C299A3E8FEFF4CC84C87D095879774305A2/"
-    local panelImageImageUrl_5 = "https://steamusercontent-a.akamaihd.net/ugc/38943008359440833/37A76A773237E05E3F5632DE8B706772DDD33EA7/"
-    local panelImageImageUrl_6 = "https://steamusercontent-a.akamaihd.net/ugc/38943008359440833/37A76A773237E05E3F5632DE8B706772DDD33EA7/"
-    local panelImageImageUrl_7 = "https://steamusercontent-a.akamaihd.net/ugc/38943008359440833/37A76A773237E05E3F5632DE8B706772DDD33EA7/"
-    
+
 
 
 -- Funktion zur Ermittlung der Miniaturen-GUIDs  die gerade dort angemeldet sind
@@ -317,7 +306,7 @@
                 id = "Farbpanel_main",
                 width = "410",
                 height = "260",
-                position = "-650 350",
+                position = "-300 300",
                 color = "#00000000",
                 rectAlignment = "MiddleCenter",
                 allowDragging = "true",
@@ -1493,10 +1482,6 @@ end
         UI.setAttributes("image-refresh_3", { image = refreshImageUrl })
         UI.setAttributes("image-refresh_4", { image = refreshImageUrl })
 
-        UI.setAttributes("image-panelbck_1", { image = panelImageImageUrl_1 })
-        UI.setAttributes("image-panelbck_2", { image = panelImageImageUrl_2 })
-        UI.setAttributes("image-panelbck_3", { image = panelImageImageUrl_3 })
-        UI.setAttributes("image-panelbck_4", { image = panelImageImageUrl_4})
 
 
 
